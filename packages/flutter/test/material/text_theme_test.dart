@@ -320,6 +320,50 @@ void main() {
     expect(sizeTheme.labelSmall!.height, baseTheme.labelSmall!.height! * 2.0 + 5.0);
   });
 
+  test('TextTheme apply fontFeatures and fontVariations', () {
+    final typography = Typography.material2021();
+    final TextTheme baseTheme = Typography.englishLike2021.merge(typography.black);
+    const List<FontFeature> fontFeatures = <FontFeature>[FontFeature.enable('smcp')];
+    const List<FontVariation> fontVariations = <FontVariation>[FontVariation('wght', 500.0)];
+
+    final TextTheme modifiedTheme = baseTheme.apply(
+      fontFeatures: fontFeatures,
+      fontVariations: fontVariations,
+    );
+
+    expect(modifiedTheme.displayLarge!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.displayMedium!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.displaySmall!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.headlineLarge!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.headlineMedium!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.headlineSmall!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.titleLarge!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.titleMedium!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.titleSmall!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.bodyLarge!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.bodyMedium!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.bodySmall!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.labelLarge!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.labelMedium!.fontFeatures, fontFeatures);
+    expect(modifiedTheme.labelSmall!.fontFeatures, fontFeatures);
+
+    expect(modifiedTheme.displayLarge!.fontVariations, fontVariations);
+    expect(modifiedTheme.displayMedium!.fontVariations, fontVariations);
+    expect(modifiedTheme.displaySmall!.fontVariations, fontVariations);
+    expect(modifiedTheme.headlineLarge!.fontVariations, fontVariations);
+    expect(modifiedTheme.headlineMedium!.fontVariations, fontVariations);
+    expect(modifiedTheme.headlineSmall!.fontVariations, fontVariations);
+    expect(modifiedTheme.titleLarge!.fontVariations, fontVariations);
+    expect(modifiedTheme.titleMedium!.fontVariations, fontVariations);
+    expect(modifiedTheme.titleSmall!.fontVariations, fontVariations);
+    expect(modifiedTheme.bodyLarge!.fontVariations, fontVariations);
+    expect(modifiedTheme.bodyMedium!.fontVariations, fontVariations);
+    expect(modifiedTheme.bodySmall!.fontVariations, fontVariations);
+    expect(modifiedTheme.labelLarge!.fontVariations, fontVariations);
+    expect(modifiedTheme.labelMedium!.fontVariations, fontVariations);
+    expect(modifiedTheme.labelSmall!.fontVariations, fontVariations);
+  });
+
   test('TextTheme lerp with second parameter null', () {
     final TextTheme theme = Typography.material2018().black;
     final TextTheme lerped = TextTheme.lerp(theme, null, 0.25);
