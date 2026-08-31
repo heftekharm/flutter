@@ -407,6 +407,8 @@ class TextTheme with Diagnosticable {
     TextDecoration? decoration,
     Color? decorationColor,
     TextDecorationStyle? decorationStyle,
+    List<FontFeature>? fontFeatures,
+    List<FontVariation>? fontVariations,
   }) {
     return TextTheme(
       displayLarge: displayLarge?.apply(
@@ -424,6 +426,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       displayMedium: displayMedium?.apply(
@@ -441,6 +445,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       displaySmall: displaySmall?.apply(
@@ -458,6 +464,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       headlineLarge: headlineLarge?.apply(
@@ -475,6 +483,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       headlineMedium: headlineMedium?.apply(
@@ -492,6 +502,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       headlineSmall: headlineSmall?.apply(
@@ -509,6 +521,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       titleLarge: titleLarge?.apply(
@@ -526,6 +540,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       titleMedium: titleMedium?.apply(
@@ -543,6 +559,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       titleSmall: titleSmall?.apply(
@@ -560,6 +578,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       bodyLarge: bodyLarge?.apply(
@@ -577,6 +597,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       bodyMedium: bodyMedium?.apply(
@@ -594,6 +616,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       bodySmall: bodySmall?.apply(
@@ -611,6 +635,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       labelLarge: labelLarge?.apply(
@@ -628,6 +654,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       labelMedium: labelMedium?.apply(
@@ -645,6 +673,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
       labelSmall: labelSmall?.apply(
@@ -662,6 +692,8 @@ class TextTheme with Diagnosticable {
         wordSpacingFactor: wordSpacingFactor,
         heightFactor: heightFactor,
         heightDelta: heightDelta,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
         package: package,
       ),
     );
